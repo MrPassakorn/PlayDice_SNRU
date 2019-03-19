@@ -103,7 +103,7 @@
                     <connections>
                         <outlet property="FirstDiceImageView" destination="tYY-6o-CEf" id="7SI-JC-OxC"/>
                         <outlet property="secondDiceImageView" destination="zys-6n-tCh" id="jZO-Q1-8Wa"/>
-                        <outlet property="thirdDiceImageView" destination="4fN-fp-QTe" id="4LU-8z-Pai"/>
+                        <outlet property="thirdDiceImageView" destination="R6s-eM-xQA" id="P3v-nK-1Vk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
