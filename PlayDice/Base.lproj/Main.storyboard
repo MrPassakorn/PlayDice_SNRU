@@ -52,20 +52,23 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp5-5J-YJO">
-                                <rect key="frame" x="49" y="533" width="316" height="47"/>
+                                <rect key="frame" x="49" y="533" width="316" height="67"/>
                                 <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="86" id="6eh-o3-Qjg"/>
-                                    <constraint firstAttribute="height" constant="47" id="7Rz-dT-AXC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="7Rz-dT-AXC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="8PJ-9B-xZj"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="316" id="RMq-n7-5o3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="RMq-n7-5o3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="UFs-w4-o1t"/>
-                                    <constraint firstAttribute="width" constant="316" id="aeY-Fa-bKp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="aeY-Fa-bKp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <state key="normal" title="Ramdom Dice">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="RamdomDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yke-si-Pb6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xM-SW-t0T">
                                 <rect key="frame" x="118" y="259" width="178" height="48.5"/>
@@ -97,6 +100,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstDiceImageView" destination="tYY-6o-CEf" id="7SI-JC-OxC"/>
+                        <outlet property="secondDiceImageView" destination="zys-6n-tCh" id="jZO-Q1-8Wa"/>
+                        <outlet property="thirdDiceImageView" destination="4fN-fp-QTe" id="4LU-8z-Pai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

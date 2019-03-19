@@ -10,11 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var FirstDiceImageView: UIImageView!
+    
+    @IBOutlet weak var secondDiceImageView: UIImageView!
+    
+    @IBOutlet weak var thirdDiceImageView: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+    }   //Nain Method
+
+    
+    @IBAction func RamdomDiceButton(_ sender: UIButton) {
+        print("You Click Rramdom")
+        
+        
+    }   //ramdomDice
+    
+    
 
 
-}
+}   //Main Class
 
